@@ -19,7 +19,7 @@ const Default = () => {
               <Link to={"/login"}>Login</Link>
             </button>
             <button className="btn rounded-3xl px-4 hover:bg-teal-50 font-semibold text-lg bg-slate-400 p-2">
-              Registration
+              <Link to={"/registration"}>Registration</Link>
             </button>
           </div>
         </div>
