@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Default = () => {
   return (
     <>
@@ -14,7 +16,7 @@ const Default = () => {
           <p className="text-2xl">Your Trusted Mobile Finance Service</p>
           <div className="flex justify-center gap-4 mt-5">
             <button className="btn rounded-3xl px-4 hover:bg-teal-50 font-semibold text-lg bg-slate-400 p-2">
-              Login
+              <Link to={"/login"}>Login</Link>
             </button>
             <button className="btn rounded-3xl px-4 hover:bg-teal-50 font-semibold text-lg bg-slate-400 p-2">
               Registration
