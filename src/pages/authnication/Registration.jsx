@@ -42,6 +42,19 @@ const Registration = () => {
                 />
               </div>
 
+              <div className="w-full mt-4">
+                <select
+                  className="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-lg dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300"
+                  aria-label="Select role"
+                >
+                  <option value="" disabled selected>
+                    Select Role
+                  </option>
+                  <option value="user">User</option>
+                  <option value="agent">Agent</option>
+                </select>
+              </div>
+
               <div className="flex items-center justify-center mt-4">
                 <button className="px-6 w-full py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                   Register
