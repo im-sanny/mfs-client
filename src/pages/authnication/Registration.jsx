@@ -67,7 +67,6 @@ const Registration = () => {
             <span className="text-sm text-black ">
               Already have an account?{" "}
             </span>
-
             <a
               href="#"
               className="mx-2 text-sm font-bold text-blue-500 dark:text-blue-400 hover:underline"

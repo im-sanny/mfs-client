@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
 
 const Login = () => {
+  const handleLogin = async(e) => {
+    e.preventDefault()
+    // const form = e.target;
+    // const email = form.email.value;
+    // const number = form.number.value;
+    // const pin = form.pin.value;
+  };
   return (
     <>
       <div className="h-screen flex items-center justify-center">
@@ -14,13 +21,22 @@ const Login = () => {
               Login
             </p>
 
-            <form>
+            <form onSubmit={handleLogin}>
               <div className="w-full mt-4">
                 <input
                   className="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-lg dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300"
                   type="email"
-                  placeholder="Email / Mobile"
-                  aria-label="Email / Mobile"
+                  placeholder="Email"
+                  aria-label="Email"
+                />
+              </div>
+
+              <div className="w-full mt-4">
+                <input
+                  className="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-lg dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300"
+                  type="number"
+                  placeholder="Mobile"
+                  aria-label="Mobile"
                 />
               </div>
 
