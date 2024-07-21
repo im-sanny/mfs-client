@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 const Login = () => {
   const handleLogin = async(e) => {
     e.preventDefault()
-    // const form = e.target;
-    // const email = form.email.value;
-    // const number = form.number.value;
-    // const pin = form.pin.value;
+    const form = e.target;
+    const email = form.email.value;
+    const number = form.number.value;
+    const pin = form.pin.value;
+    console.log(email,number,pin);
   };
   return (
     <>
