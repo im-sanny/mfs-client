@@ -13,7 +13,7 @@ const Registration = () => {
             <p className="mt-1 text-sm text-center text-gray-900">
               Please provide information to create an account
             </p>
-
+            <p className="mt-1 text-sm text-center text-gray-900">It's free</p>
             <form>
               <div className="w-full mt-4">
                 <input
